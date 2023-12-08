@@ -1,7 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <title>Bamber</title>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 10px;
+            width: 200px;
+        }
+
+        .image-container_2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container_2 img{
+            max-width: 100%;
+            height: auto;
+            margin-right: 10px;
+            width: 470px;
+            height: 350px;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -15,9 +46,50 @@
             <h1>
                 Projects
             </h1>
+            <h2>
+                MVGCalc
+            </h2>
             <p>
-                To see some of the coding projects I've done, check out my GitHub:@<a href="https://github.com/UnderYourSpell">UnderYourSpell</a>
+                I was part of a team that for a class built a graphing calculator for mobile phones.  It can do basic operations, as well as graphing, and also has a unit converter.
+                The majority of my work on the project was how we take input, process it, then give the user an output.  I also implemented a data persistence 
+                solution and the entire unit converter  - frontend and backend.  
             </p>
+            <b></b>
+            <p>
+                The team has future plans to deploy the app to the google play store.  We aslo plan on adding additional features like support 
+                for calculus operations and a more interactive graphing display.
+            </p>
+            
+            <div class = "image-container">
+                <img src = "resources/mvg_basic_2.png"> <img src="resources/mvg_graph_display.png"> <img src="resources/mvg_unit_conv.png">
+            </div>
+            <p>
+                Click <a href="https://drive.google.com/drive/folders/1FL7p2IKNtsRZe7CULhQaINIeTw1hT7kr?usp=drive_link">Here</a> to download the .exe file
+            </p>
+            <h2>
+                BGP Python AS Lookup
+            </h2>
+            <p>
+                The development of BGP python AS lookup was inspired by a repository found on Cisco Developer (pyjoeypy06).  
+                I thought that the code was interesting and learned of the API it was using to pull the BGP data from the internet.  
+                The API seemed underutilized so I set out to make more use of it.  The app works by appending the entered ASN to a link to the api, 
+                which then responds with JSON data.  It then parses through the JSON data for the specific information each section of information may need 
+                for the given AS.  The information is stored in object variables so the app can store more than one AS’s data.  
+                It uses string concatenation to display the result in plaintext format.  
+                The project was built in Python and the UI was built using TKinter (a built in python graphics library). 
+            </p>
+            <div class = "image-container_2">
+                <img src = "resources/moro_app_1.png"> <img src="resources/moro_app_2.png">
+            </div>
+            <p>
+                Example with AS101
+            </p>
+            <b>
+            </b>
+            <p>
+                <a href = "https://github.com/UnderYourSpell/BGP_python_AS_Lookup">GitHub repository</a> for BGP Python AS Lookup
+            </p>
+            
     </section>
     <footer>
         Check out my GitHub @<a href="https://github.com/UnderYourSpell">UnderYourSpell</a>
